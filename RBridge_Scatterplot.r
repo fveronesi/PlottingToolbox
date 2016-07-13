@@ -14,7 +14,7 @@ tool_exec <- function(in_params, out_params)
     install.packages("reshape2")
 	require(reshape2)
   
-	print("Box-Plots")
+	print("Scatterplots")
 	print("Author: Fabio Veronesi")
   
 	source_shp = in_params[[1]]
