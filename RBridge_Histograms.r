@@ -29,7 +29,7 @@ tool_exec <- function(in_params, out_params)
 	data <- arc.select(d, variable)
 	FCT <- arc.select(d, facet)
 
-	data_plot <- data.frame(data[,variable[1]])
+	data_plot <- data.frame(data[,paste(variable[1])])
   
 	if(length(variable)>1){
 		for(i in 2:length(variable)){
