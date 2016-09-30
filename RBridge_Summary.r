@@ -34,7 +34,7 @@ tool_exec <- function(in_params, out_params)
   
 	if(length(variable)>1){
 		for(i in 2:length(variable)){
-			data_summary <- cbind(data_summary, data[,variable[i]])
+			data_summary <- cbind(data_summary, data[,paste(variable[i])])
 		}
 	}
 	
