@@ -30,7 +30,7 @@ tool_exec <- function(in_params, out_params)
 	### Create a Data.Frame with all the variables
 	data <- arc.select(d, variable)
 	
-	data_summary <- data.frame(data[,variable[1]])
+	data_summary <- data.frame(data[,paste(variable[1])])
   
 	if(length(variable)>1){
 		for(i in 2:length(variable)){
